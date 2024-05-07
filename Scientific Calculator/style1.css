@@ -1,0 +1,244 @@
+::-webkit-scrollbar {
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contact{
+    position: relative;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff6a;
+  box-shadow: 2px 2px 5px #000000;
+}
+.contact .content h1{
+    margin-top: 40px;
+    font-size: 3em;
+    font-weight: 500;
+    color: rgb(0, 183, 255);
+    text-align: center;
+}
+.contact .content p{
+    font-size: 1.1em;
+    font-weight: 300;
+    color: rgb(145, 145, 145);
+    text-align: center;
+    margin-top: 20px;
+}
+.contain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.contain .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+}
+.contain .contactinfo .box{
+    display: flex;
+    position: relative;
+    padding: 20px 0px;
+    cursor: pointer;
+}
+.contain .contactinfo .box .text{
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: 0px 15px;
+    color: rgb(255, 255, 255);
+}
+.contain .contactinfo .box .text h3{
+    font-weight: 500;
+    color: rgb(3, 167, 243);
+}
+.contain .contactinfo .box .text p{
+   padding-top: 10px;
+}
+.contain .contactinfo .txt{
+    font-size: 1.1em;
+    color: rgb(255, 98, 0);
+   margin-top: 50px;
+   font-weight: 500;
+   padding-left: 10px;
+   border-left: 50px solid rgb(249, 4, 240);
+   line-height: 1em;
+}
+.contain .card{
+    width: 320px;
+    height: 440px;
+    position: relative;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 0px #444444, -1px -1px 0px #eaeaea, -1px 1px 0px #ededed, 1px -1px 0px #444444;
+}
+.contain .card h2{
+    font-size: 2em;
+    font-weight: 500;
+    color: #450c0c;
+    margin-left: 24px;
+}
+.contain .card .inputbox{
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 24px;
+}
+.contain .card .inputbox input,
+.contain .card .inputbox textarea{
+  width: 80%;
+  padding: 5px 0;
+  font-size: 1.1em;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #9c9c9c;
+  outline: none;
+  resize: none;
+}
+.contain .card .inputbox span{
+position: absolute;
+left: 0;
+pointer-events: none;
+padding: 5px 0;
+margin: 10px 0;
+font-size: 1.1em;
+color: #828080;
+transition: .5s;
+}
+.rokku{
+    position: relative;
+    display: flex;
+    gap: 7px;
+    margin: 10px 0px;
+}
+.rokku li{
+   list-style: none;
+   background: none;
+   width: 20px;
+   height: 20px;
+   padding: none;
+}
+.rokku li:active{
+   list-style: none;
+   background: none;
+   width: 20px;
+   height: 20px;
+   padding: none;
+}
+.contain .contactinfo .box .text h3{
+    margin-left: -50px;
+}
+.icon{
+    margin-top: 10px;
+}
+.contain .card .inputbox input:focus~span,
+.contain .card .inputbox textarea:focus~span,
+.contain .card .inputbox input:valid~span,
+.contain .card .inputbox textarea:valid~span{
+    color: #e91e63;
+    font-size: 0.9em;
+    transform: translateY(-20px);
+}
+.contain .card .inputbox input[type="submit"]{
+    width: 127px;
+    height: 30px;
+    background: #00bcd4;
+    color: #666666;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding:6px 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+    box-shadow: inset 1px 0px #012e34, inset 1px 1px 0px #e5ebec;
+}
+@media (max-width:991px) {
+    .contact{
+        padding: 5%;
+    }
+    .contain .contactinfo .box .text h3{
+        margin-left: -50px;
+    }
+}
+@media (max-width:768px) {
+    .contact{
+        padding: 2%;
+    }
+}
+@media (max-width:670px) {
+    .contact{
+        padding: 20%;
+    }
+    .contain{
+        flex-direction: column;
+    }
+    .contain .contactinfo,
+    .contain .card{
+        width: 100%;
+    }
+    .contain .card{
+        padding: 60px 40px;
+    }
+
+}
+@media (max-width:500px) {
+    .contact{
+        padding: 10%;
+    }
+    .contain{
+        flex-direction: column;
+    }
+    .contain .contactinfo,
+    .contain .card{
+        width: 100%;
+    }
+    .contain .card{
+        padding: 60px 40px;
+    }
+
+}
+@media (max-width:360px) {
+    .contact{
+        padding: 5%;
+    }
+    .contain{
+        flex-direction: column;
+    }
+    .contain .contactinfo,
+    .contain .card{
+        width: 100%;
+    }
+    .contain .card{
+        padding: 60px 40px;
+    }
+
+}
